@@ -217,7 +217,7 @@ const workExperiences = {
       company: "Museums, Libraries, Universities, & Startups",
       companylogo: require("./assets/images/youngDeveloper.jpg"),
       date: "2003-2014",
-      desc: "In ye olden days, I worked in a variety of software engineering positions, including at the Cleveland Museum of Art, Case Western Reserve University, UT Austin, UNC Chapel Hill, and a few startups."
+      desc: "In ye olden days, I worked in a variety of software engineering positions at the Cleveland Museum of Art, Case Western Reserve University, UT Austin, UNC Chapel Hill, and a few startups."
     }
   ]
 };
