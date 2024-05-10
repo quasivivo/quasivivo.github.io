@@ -62,7 +62,7 @@ const skillsSection = {
       "🚀 Progressive Web Applications (PWAs) in React and Angular with TypeScript and Nodejs backends."
     ),
     emoji(
-      "⚡ Integration of third party services such as Firebase / AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase & AWS, along with CI/CD build & test pipelines."
     )
   ],
 
