@@ -9,8 +9,14 @@ export default function EducationCard({school}) {
   const GetDescBullets = ({descBullets}) => {
     return descBullets
       ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
-            {item}
+          <li key={i} className="edSubtitle">
+            {item.link ? (
+              <a href={item.link} target="_blank" rel="noreferrer">
+                {item.text}
+              </a>
+            ) : (
+              item.text
+            )}
           </li>
         ))
       : null;

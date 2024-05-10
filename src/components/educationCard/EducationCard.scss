@@ -78,6 +78,13 @@
   margin-top: 0.5rem;
 }
 
+.edSubtitle,
+.edSubtitle a,
+.dark-mode .edSubtitle a {
+  color: $subTitle;
+  text-align: left;
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {

@@ -23,10 +23,10 @@ const greeting = {
   username: "Will Hannah",
   title: "Hi, I'm Will",
   subTitle: emoji(
-    "A friendly neighborhood Full Stack Software Developer with experience building enterprise-grade Desktop, Mobile & Web applications with Swift / Objective-C / C++ / C# / TypeScript & JavaScript / Reactjs / Nodejs and other great languages, libraries and frameworks."
+    "A friendly neighborhood Full Stack Software Developer with experience building enterprise-grade Desktop, Mobile & Web applications, most often using Swift, Objective-C, C++, C#, TypeScript & JavaScript, Reactjs, & Nodejs."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/uc?id=1V-UxQX6o1NyndQKbkZ021jf9ca3eQfV9&export=download", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/quasivivo",
   linkedin: "https://www.linkedin.com/in/wphannah/",
-  gmail: "saadpasta70@gmail.com",
+  gmail: "portfolio@stream12.com",
   stackoverflow: "https://stackoverflow.com/users/2827152/will",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -45,15 +45,24 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "My Strengths",
+  subTitle:
+    "I've been developing software for nearly 20 years, focusing on a few areas along the way. These are some of my strengths:",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "📱 Developing highly interactive Front end / User Interfaces, typically alongside complex, real-time background processing jobs."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "🎞️ Video recording, transcoding, and streaming applications for macOS, iOS & Windows in Swift, Objective-C, C++, and C#."
+    ),
+    emoji(
+      "🎇 Health & digital wellness applications for iOS using HealthKit and Screen Time APIs."
+    ),
+    emoji(
+      "🚀 Progressive Web Applications (PWAs) in React and Angular with TypeScript and Nodejs backends."
+    ),
+    emoji(
+      "⚡ Integration of third party services such as Firebase / AWS / Digital Ocean"
     )
   ],
 
@@ -62,19 +71,19 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Swift",
+      fontAwesomeClassname: "fab fa-swift"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "objective-c",
+      fontAwesomeClassname: "fab fa-apple"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "c#",
+      fontAwesomeClassname: "fab fa-microsoft"
     },
     {
-      skillName: "JavaScript",
+      skillName: "TypeScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
@@ -84,14 +93,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
     },
     {
       skillName: "sql-database",
@@ -104,14 +105,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -123,23 +116,26 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "The University of North Carolina at Chapel Hill",
+      logo: require("./assets/images/uncLogo.png"),
+      subHeader: "Master of Science in Information & Library Science",
+      desc: "Researched Natural Language Processing & Machine Learning applied to music theory.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        {
+          text: "Master's Thesis: 'Automated music genre classification...'",
+          link: "https://cdr.lib.unc.edu/downloads/wm117s409?locale=en"
+        },
+        {text: "Carolina Academic Library Associate Fellowship Recipient"},
+        {text: "Margaret Ellen Kalp Memorial Fellowship Recipient"}
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Case Western Reserve University",
+      logo: require("./assets/images/cwruLogo.jpg"),
+      subHeader:
+        "Bachelor of Arts in Computer Science, Music Theory, and French",
+      desc: "Completed the engineering core curriculum for computer science while taking additional courses in music theory, linguistics, and several foreign languages.",
+      descBullets: [{text: "Provost Scholarship Recipient"}]
     }
   ]
 };
@@ -150,16 +146,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Frontend - Desktop & Mobile Apps (Swift, Objective-C, C#, C++)",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Backend",
+      Stack: "Frontend - Web (React, Angular, TypeScript, JavaScript)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Backend (Nodejs, C#, PHP)",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "DevOps (Firebase, GCP, AWS, Github Actions, CI/CD)",
+      progressPercentage: "50%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -172,28 +172,52 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      company: "Freelance",
+      companylogo: require("./assets/images/freelancer.png"),
+      date: "Dec 2023 – Present",
+      desc: "Developing productivity & wellness iOS apps for clients using the Screen Time API & HealthKit."
+    },
+    {
+      role: "Full Stack Software Engineer",
+      company: "Stream 12",
+      companylogo: require("./assets/images/stream12Logo.png"),
+      date: "Dec 2023 – Present",
+      desc: "Establishing services for the launch of a video multicasting SaaS product in 2024."
+    },
+    {
+      role: "Software Engineer",
+      company: "Zight",
+      companylogo: require("./assets/images/zightLogo.jpg"),
+      date: "2019 – 2022 Full-time, Jan 2024 - Present Part-time",
+      desc: "Hired to modernize CloudApp, a SaaS productivity screen sharing app for Mac, iOS & Windows.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Led an initial team of 3 developers, which later expanded to 7,  in creating versions 6 and 7 of the applications.",
+        "Currently working part-time on an image stitching integration for the macOS app using AVFoundation & OpenCV."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Developer 3",
+      company: "Hyland Software",
+      companylogo: require("./assets/images/hylandLogo.jpg"),
+      date: "2014 - 2016 (Developer), 2016-2020 (Developer 2), 2020-2021 (Developer 3)",
+      desc: "Progressed through the ranks, promoted twice in 3 years, while developing features in support of a low-code app development module within the enterprise content management system, OnBase.",
+      descBullets: [
+        "Led a team of developers in modernizing the WorkView CMS module, which included UI web components, iOS & Android mobile apps, a .NET REST Web API, and a .NET/WPF PWA generator application."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Senior iOS Developer",
+      company: "Vertisense, Inc.",
+      companylogo: require("./assets/images/vertisenseLogo.webp"),
+      date: "2015 - 2016",
+      desc: "Hired to develop the 3 iOS mobile applications necessary to bring a Bluetooth Low Energy (BLE) breathalyzer to market following an earlier release of an audio-jack version of the device."
+    },
+    {
+      role: "Various Software Engineering Positions",
+      company: "Museums, Libraries, Universities, & Startups",
+      companylogo: require("./assets/images/youngDeveloper.jpg"),
+      date: "2003-2014",
+      desc: "In ye olden days, I worked in a variety of software engineering positions, including at the Cleveland Museum of Art, Case Western Reserve University, UT Austin, UNC Chapel Hill, and a few startups."
     }
   ]
 };
@@ -203,7 +227,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -236,16 +260,16 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications And Achievements 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications, Achievements, and some other notable things that I've done.",
 
   achievementsCards: [
     {
@@ -297,7 +321,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -321,7 +345,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -340,7 +364,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -353,7 +377,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -368,9 +392,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Discuss a project or just want to say hi? Contact me using the methods below.",
+  number: "+1 (216) 367-9175",
+  email_address: "portfolio@stream12.com"
 };
 
 // Twitter Section
