@@ -174,21 +174,21 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Freelance",
       companylogo: require("./assets/images/freelancer.png"),
-      date: "Dec 2023 – Present",
+      date: "Oct 2022 – Present",
       desc: "Developing productivity & wellness iOS apps for clients using the Screen Time API & HealthKit."
     },
     {
       role: "Full Stack Software Engineer",
       company: "Stream 12",
       companylogo: require("./assets/images/stream12Logo.png"),
-      date: "Dec 2023 – Present",
+      date: "Oct 2022 – Present",
       desc: "Establishing services for the launch of a video multicasting SaaS product in 2024."
     },
     {
       role: "Software Engineer",
       company: "Zight",
       companylogo: require("./assets/images/zightLogo.jpg"),
-      date: "2019 – 2022 Full-time, Jan 2024 - Present Part-time",
+      date: "Apr 2019 – Oct 2022 Full-time, Jan 2024 - Present Part-time",
       desc: "Hired to modernize CloudApp, a SaaS productivity screen sharing app for Mac, iOS & Windows.",
       descBullets: [
         "Led an initial team of 3 developers, which later expanded to 7,  in creating versions 6 and 7 of the applications.",
@@ -199,7 +199,7 @@ const workExperiences = {
       role: "Software Developer 3",
       company: "Hyland Software",
       companylogo: require("./assets/images/hylandLogo.jpg"),
-      date: "2014 - 2016 (Developer), 2016-2020 (Developer 2), 2020-2021 (Developer 3)",
+      date: "Apr 2014 - Aug 2016 (Developer), Feb 2016 - Jan 2020 (Developer 2), Jan 2020 - Apr 2021 (Developer 3)",
       desc: "Progressed through the ranks, promoted twice in 3 years, while developing features in support of a low-code app development module within the enterprise content management system, OnBase.",
       descBullets: [
         "Led a team of developers in modernizing the WorkView CMS module, which included UI web components, iOS & Android mobile apps, a .NET REST Web API, and a .NET/WPF PWA generator application."
@@ -209,15 +209,15 @@ const workExperiences = {
       role: "Senior iOS Developer",
       company: "Vertisense, Inc.",
       companylogo: require("./assets/images/vertisenseLogo.webp"),
-      date: "2015 - 2016",
+      date: "Aug 2015 - Feb 2016",
       desc: "Hired to develop the 3 iOS mobile applications necessary to bring a Bluetooth Low Energy (BLE) breathalyzer to market following an earlier release of an audio-jack version of the device."
     },
     {
       role: "Various Software Engineering Positions",
-      company: "Museums, Libraries, Universities, & Startups",
+      company: "Early Career",
       companylogo: require("./assets/images/youngDeveloper.jpg"),
       date: "2003-2014",
-      desc: "In ye olden days, I worked in a variety of software engineering positions at the Cleveland Museum of Art, Case Western Reserve University, UT Austin, UNC Chapel Hill, and a few startups."
+      desc: "In ye olden days, I worked in a variety of software engineering positions at the Cleveland Museum of Art, Case Western Reserve University, UT Austin, UNC Chapel Hill, and a few startups. I got my start installing network cables, switches, and servers at University Hospitals in Cleveland."
     }
   ]
 };
@@ -282,14 +282,6 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         }
       ]
     },
